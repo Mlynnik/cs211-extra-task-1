@@ -48,7 +48,7 @@ int main()
     assert(fabs(time_to_utc(-1, 0.0) - 1.0) < DBL_EPSILON);
     assert(fabs(time_to_utc(-1, 23.0)) < DBL_EPSILON);
     std::cout << "test6 has been passed!" << std::endl;
-/*
+
     //test7
     assert(fabs(time_from_utc(+0, 12.0) - 12.0) < DBL_EPSILON);
     assert(fabs(time_from_utc(+1, 12.0) - 13.0) < DBL_EPSILON);
@@ -59,7 +59,7 @@ int main()
     assert(fabs(time_from_utc(-1, 23.0) - 22.0) < DBL_EPSILON);
     assert(fabs(time_from_utc(+1, 23.0) - 0.0) < DBL_EPSILON);
     std::cout << "test7 has been passed!" << std::endl;
-    */
+    
     std::cout << "All tests have been passed!";
 }
 

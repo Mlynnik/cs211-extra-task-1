@@ -69,5 +69,5 @@ double time_to_utc(int utc_offset, double time)
 //Return UTC time in time zone utc_offset.
 double time_from_utc(int utc_offset, double time)
 {
-    return 0;
+    return time_to_utc(-utc_offset, time);
 }
