@@ -27,7 +27,8 @@ double to_float_hours(int hours, int minutes, int seconds)
 //hour as seen on a 24 - hour clock.
 double to_24_hour_clock(double hours)
 {
-    return 0;
+    assert(hours >= 0);
+    return ((int)hours % 24) + hours - (int)hours;
 }
 
 //hours part of a time in seconds
