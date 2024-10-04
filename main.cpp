@@ -33,13 +33,13 @@ int main()
     assert(fabs(to_24_hour_clock(4) - 4) < DBL_EPSILON);
     assert(fabs(to_24_hour_clock(28.5) - 4.5) < DBL_EPSILON);
     std::cout << "test4 has been passed!" << std::endl;
-/*
+
     //test5
     assert(get_hours(3800) == 1);
     assert(get_minutes(3800) == 3);
     assert(get_seconds(3800) == 20);
     std::cout << "test5 has been passed!" << std::endl;
-
+/*
     //test6
     assert(fabs(time_to_utc(+0, 12.0) - 12.0) < DBL_EPSILON);
     assert(fabs(time_to_utc(+1, 12.0) - 11.0) < DBL_EPSILON);

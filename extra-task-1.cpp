@@ -34,19 +34,22 @@ double to_24_hour_clock(double hours)
 //hours part of a time in seconds
 int get_hours(int seconds)
 {
-    return 0;
+    assert(0 <= seconds);
+    return seconds / 3600;
 }
 
 //hours part of a time in seconds
 int get_minutes(int seconds)
 {
-    return 0;
+    assert(0 <= seconds);
+    return (seconds % 3600) / 60;
 }
 
 //hours part of a time in seconds
 int get_seconds(int seconds)
 {
-    return 0;
+    assert(0 <= seconds);
+    return seconds % 60;
 }
 
 //Return time at UTC+0, where utc_offset is the number of hours away from UTC + 0.
