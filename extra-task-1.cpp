@@ -12,7 +12,7 @@ double seconds_difference(double time_1, double time_2)
 //time_2 is than a time in seconds time_1.
 double hours_difference(double time_1, double time_2)
 {
-    return 0;
+    return (time_2 - time_1) / 3600.0;
 }
 
 //Return the total number of hours in the specified number
