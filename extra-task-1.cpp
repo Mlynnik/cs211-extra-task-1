@@ -19,7 +19,8 @@ double hours_difference(double time_1, double time_2)
 //of hours, minutes, and seconds.
 double to_float_hours(int hours, int minutes, int seconds)
 {
-    return 0;
+    assert((0 <= minutes < 60) && (0 <= seconds < 60) && (hours >= 0));
+    return hours + (minutes / 60.0) + (seconds / 3600.0);
 }
 
 //hours is a number of hours since midnight. Return the

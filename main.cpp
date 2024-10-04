@@ -19,13 +19,13 @@ int main()
     assert(fabs(hours_difference(1800.0, 2160.0) - 0.1) < DBL_EPSILON);
     assert(fabs(hours_difference(1800.0, 1800.0)) < DBL_EPSILON);
     std::cout << "test2 has been passed!" << std::endl;
-/*
+
     //test3
     assert(fabs(to_float_hours(0, 15, 0) - 0.25) < DBL_EPSILON);
     assert(fabs(to_float_hours(2, 45, 9) - 2.7525) < DBL_EPSILON);
     assert(fabs(to_float_hours(1, 0, 36) - 1.01) < DBL_EPSILON);
     std::cout << "test3 has been passed!" << std::endl;
-
+/*
     //test4
     assert(fabs(to_24_hour_clock(24)) < DBL_EPSILON);
     assert(fabs(to_24_hour_clock(48)) < DBL_EPSILON);
